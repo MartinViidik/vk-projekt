@@ -1,0 +1,173 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    background-image: linear-gradient(gray 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px),
+    linear-gradient(rgba(200,200,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,200,255,.3) 1px, transparent 1px);
+    background-size:50px 50px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    animation: animatedBackground 40s linear infinite;
+}
+main {
+	top: 0;
+	bottom: 0;
+}
+
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: black;
+   z-index: 200; /* Higher than anything else in the document */
+
+ }
+
+.loading{
+  text-align: center;
+  font-size: 50px;
+}
+
+img {
+  margin-top: 100px;
+  animation: fadeInDown 2s;
+}
+
+.play {
+  height: 100px;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  animation: fadeInUp 3s;
+  text-shadow: 1px 2px black;
+  font-family: 'Press Start 2P', cursive;
+}
+.container {
+  width: 350px;
+  height: 100px;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  text-shadow: 1px 2px black;
+  animation: fadeInUp 3s;
+  z-index: 5;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.collapse {
+  background-color:black;
+}
+
+p {
+  text-align: left;
+  z-index: 50;
+  font-family: 'Press Start 2P', cursive;
+  font-size:12px;
+}
+
+.credits {
+  color: white;
+  position: absolute;
+  background: black;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size:75%;
+  animation: fadeInUp 2s;
+}
+
+.rectangle {
+  width: 300px;
+  height:100%;
+  background: black;
+  margin: 0 auto;
+  margin-top: -550px;
+  animation: fadeInUp 1s;
+  z-index: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}

@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# 2016-05-18 v1.36
+game.js
+game.html
+index.html
+menu.css
+game.css
+augmentedgesture.js
+
+NETWORK:
+*
+
+CACHE:
+graphics/cyberball.png
